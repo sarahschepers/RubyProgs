@@ -4,5 +4,10 @@ puts "Geef de lengte van zijde B in:"
 b = gets.to_f
 a2 = a**2
 b2 = b**2
-a2_b2 = a2 + b2 
-puts "De schuine zijde is: #{ Math.sqrt(a2_b2)}"
+c = Math.sqrt(a*a+b*b)
+puts "De schuine zijde is: #{c}"
+d = Math.asin(a/c) * 180/Math::PI
+e = Math.asin(b/c) * 180/Math::PI
+puts "Eerste hoek: #{d}"
+puts "Tweede hoek: #{e}"
+puts "Controle: #{d+e}"
